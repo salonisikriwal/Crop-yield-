@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saloni Sikriwal - Crop Prediction</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">KISAN SEVA</div>
+    <nav>
+      <ul>
+        <li><a href="#about" data-key="nav_about">About</a></li>
+        <li><a href="#crop-prediction" data-key="nav_crop">Crop Prediction</a></li>
+        <li><a href="#contact" data-key="nav_contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <button id="mode-toggle">🌙</button>
+      <button id="lang-toggle">हिंदी</button>
+    </div>
+  </header>
+  <div class="leaf-container">
+  <!-- Multiple leaves -->
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+</div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Predict the Best Crop for Your Field</h1>
+    <p>Enter your field details and get instant crop suggestions!</p>
+  </section>
+
+  <!-- Crop Prediction Section -->
+  <section id="crop-prediction" class="prediction-section">
+    <h2>Crop Prediction</h2>
+    <form id="crop-form">
+      <input type="number" name="nitrogen" placeholder="Nitrogen (N)" required>
+      <input type="number" name="phosphorous" placeholder="Phosphorus (P)" required>
+      <input type="number" name="potassium" placeholder="Potassium (K)" required>
+      <input type="number" name="temperature" placeholder="Temperature (°C)" step="0.1" required>
+      <input type="number" name="humidity" placeholder="Humidity (%)" step="0.1" required>
+      <input type="number" name="ph" placeholder="Soil pH" step="0.1" required>
+      <input type="number" name="rainfall" placeholder="Rainfall (mm)" step="0.1" required>
+      <button type="submit">Predict Crop</button>
+    </form>
+    <div id="prediction-result" class="result">
+      <img id="crop-image" src="" alt="Predicted Crop">
+      <p id="crop-name"></p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+  <div class="about-overlay">
+    <h2>About This Website</h2>
+    <p>This website, created by Saloni Sikriwal, helps farmers and enthusiasts predict the best crop for their fields using AI. It features a beautiful greenery-themed interface, smooth animations, bilingual support, and responsive design for all devices.</p>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: contact@salonisikriwal.com</p>
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>
